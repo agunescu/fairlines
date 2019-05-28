@@ -1,4 +1,5 @@
-import React, { useState, useContext, useEffect, useReducer } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import NoSSR from 'react-no-ssr';
 import Select from 'react-select';
 import { SET_COUNTRY, SHOW_FARES } from '../context/types';
@@ -86,7 +87,7 @@ export default function DestinationForm() {
       >
         Search
       </button>
-      <a>Manage watchlist</a>
+      <Link to="/watchlist">Manage watchlist</Link>
     </div>
   );
 }

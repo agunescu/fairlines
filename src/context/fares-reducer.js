@@ -28,7 +28,7 @@ const setFares = (fares, state) => ({
 
 const addToWatchlist = (data, state) => ({
   ...state,
-  watchlist: data,
+  selectedFares: [...state.selectedFares, data],
 });
 
 export const FaresReducer = (state, action) => {

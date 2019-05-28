@@ -233,7 +233,38 @@
   outline: 0;
   margin-bottom: 10px;
 }
+
 .fa-class-button-w:hover {
   box-shadow: 0 0 0.6rem 0 rgba(0,0,0,.5);
   cursor: pointer;
+}
+
+.fa-ul-main {
+  padding: 10%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.fa-ul-header {
+  background: lightgrey;
+  padding: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.fa-ul-list {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.fa-ul-item {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.fa-ul-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
