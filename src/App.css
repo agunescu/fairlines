@@ -1,33 +1,239 @@
-.App {
-  text-align: center;
+.future-airlines {
+  font-family: HelveticaNeue-Medium, sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.fa-main-ct {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 5%;
+}
+
+.fa-header {
+  font-family: HelveticaNeue-Medium, sans-serif;
+}
+
+.fa-cards {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-header {
+  font-size: 25px;
+  font-family: EmiratesSM,helvetica,arial,sans-serif;
+  letter-spacing: .5px;
+  font-weight: 400;
+}
+
+.fa-fares {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fa-fares-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.fa-top-pick {
+  position: absolute;
+  background-color: #c60c30;
+  font-weight: 700;
+  top: 20px;
+  padding: 10px 15px;
+  color: #FFF;
+  font-size: 14px;
+  border-radius: 0 4px 4px 0;
+  margin-left: -10px;
+}
+
+.fa-top-pick:after {
+  content: "";
+  height: 0;
+  width: 0;
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  border-top: 10px solid #9B0E01;
+  border-left: 10px solid transparent;
   pointer-events: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fa-class {
+  padding: 2%;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.fa-class:after {
+  content:"";
+  background: #287214;;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.fa-class-b {
+  padding: 2%;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.fa-class-b:after {
+  background: #245EB2;
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.fa-class-text {
+  font-size: 14px;
+  color: #287214;
+  margin-bottom: 5px;
+}
+
+.fa-class-text-b {
+  font-size: 14px;
+  color: #245EB2;
+  margin-bottom: 5px;
+}
+
+.fa-class-from {
+  font-size: 14px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.fa-class-price {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 30px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.fa-class-currency {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.fa-class-fu-text {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.fa-class-fu {
+  font-size: 13px;
+  padding-left: 5px;
+  font-weight: 700;
+}
+
+.fa-class-expiry {
+  color: #d61920;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.fa-class-input {
+  margin-bottom: 10px;
+}
+
+.fa-class-button {
+  width: 51.5%;
+  border: 0;
+  background: #c60c30;
+  color: #fff;
+  font-size: 16px;
+  height: 50px;
+  font-style: normal;
+  border-radius: .3rem;
+  outline: 0;
+  margin-bottom: 10px;
+}
+
+.fa-text {
+  font-family: sans-serif;
+  font-size: 10px;
+  color: grey;
+  margin-bottom: 20px;
+}
+
+.fa-input {
+  font-size: 20px;
+  font-family: HelveticaNeue-Medium, sans-serif;
+  line-height: 23px;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  color: #333;
+  background: #fff;
+  box-shadow: inset 4px 4px 0 0 #f6f6f6;
+  border-radius: .3rem;
+  border: 1px solid #666;
+  padding: 10px;
+  outline: 0;
+  margin-bottom: 10px;
+}
+
+.fa-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.fa-button {
+  border: 0;
+  background: #c60c30;
+  color: #fff;
+  font-size: 16px;
+  height: 50px;
+  font-style: normal;
+  border-radius: .3rem;
+  width: 100%;
+  outline: 0;
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fa-button:hover {
+  box-shadow: 0 0 0.6rem 0 rgba(0,0,0,.5);
+  cursor: pointer;
+}
+
+.fa-class-button-w {
+  border: 1px solid #666;
+  background: white;
+  color: black;
+  font-size: 16px;
+  height: 50px;
+  font-style: normal;
+  border-radius: .3rem;
+  width: 30%;
+  outline: 0;
+  margin-bottom: 10px;
+}
+.fa-class-button-w:hover {
+  box-shadow: 0 0 0.6rem 0 rgba(0,0,0,.5);
+  cursor: pointer;
 }
