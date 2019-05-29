@@ -268,3 +268,16 @@
   font-weight: 700;
   margin-bottom: 10px;
 }
+
+@media (max-width: 850px) {
+  .fa-main-ct {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+
+  .fa-cards {
+    display: flex;
+    justify-content: normal;
+  }
+}
